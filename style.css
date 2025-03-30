@@ -1,0 +1,176 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+   
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+   
+  /* Header Styles */
+  header {
+    color: black;
+    padding: 1em;
+    text-align: center;
+  }
+   
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+   
+  /* Form and Input Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+   
+  form label {
+    margin-bottom: 0.25em;
+  }
+   
+  form input {
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+   
+  form button {
+    padding: 0.5em;
+    background-color: #2B5288; /* Dark Blue */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+   
+  /* Links */
+  a {
+    color: #9cbae3; /* Light Blue */
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
+   
+  /* Signup Container Specific */
+  .signup-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2em;
+    margin-top: 2em;
+  }
+   
+  /* Trending SIPs Section */
+  .trending-sips {
+    margin-bottom: 2em;
+  }
+   
+  .trending-sips h2 {
+    margin-bottom: 0.5em;
+  }
+   
+  .sip-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    padding-bottom: 1em;
+  }
+   
+  .sip-card {
+    min-width: 150px;
+    background-color: #2B5288;
+    color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+  }
+   
+  .sip-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+   
+  /* Expenditure Preference Section */
+  .expenditure-preference {
+    margin-bottom: 2em;
+  }
+   
+  .expenditure-preference h2 {
+    margin-bottom: 0.5em;
+  }
+   
+  /* Goals Section */
+  .goals h2 {
+    margin-bottom: 0.5em;
+  }
+   
+  .goals ul {
+    list-style: none;
+    margin-bottom: 1em;
+  }
+   
+  .goals li {
+    background-color: #e8e8e8;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 4px;
+  }
+   
+  /* Gold Calculator Section */
+  .gold-calculator {
+    margin-top: 1em;
+  }
+   
+  .gold-calculator h2 {
+    margin-bottom: 0.5em;
+  }
+   
+  /* Bottom Navigation Bar */
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #2B5288; /* Dark Blue */
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+  }
+   
+  .bottom-nav .nav-item {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+   
+  .bottom-nav .nav-item span {
+    display: block;
+    margin-top: 0.25em;
+    font-size: 0.9em;
+  }
+   
+  .bottom-nav img {
+    width: 24px;
+    height: 24px;
+  }
+   
+  /* Responsive Adjustments */
+  @media (min-width: 600px) {
+    .container {
+      max-width: 800px;
+    }
+  }

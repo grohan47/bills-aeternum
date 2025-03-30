@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gold Calculator - PWA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Gold Calculator</h1>
+  </header>
+  <main class="container">
+    <section class="gold-image">
+      <img src="assets/gold-image.png" alt="Gold" />
+      <!-- If the image doesn't load, replace 'assets/gold-image.png' with your actual image path -->
+    </section>
+ 
+    <!-- Real Time Gold Calculator -->
+    <section class="gold-calculator">
+      <h2>Real Time Gold Calculator</h2>
+      <form id="gold-form">
+        <label for="gold-amount">Enter Amount:</label>
+        <input type="number" id="gold-amount" name="gold-amount" placeholder="Enter amount" required />
+        <button type="submit">Calculate</button>
+      </form>
+      <div id="gold-result"></div>
+    </section>
+    <img src="assets/gold.png" alt="Gold Image" width="700" height="400">
+  </main>
+  <nav class="bottom-nav">
+    <a href="thumb.html" class="nav-item">
+      <img src="assets/thumb-icon.png" alt="Thumb Rules" />
+      <span>Thumb Rules</span>
+    </a>
+    <a href="index.html" class="nav-item">
+      <img src="assets/portfolio-icon.png" alt="Portfolio" />
+      <span>Portfolio</span>
+    </a>
+    <a href="gold.html" class="nav-item">
+      <img src="assets/gold-icon.png" alt="Gold" />
+      <span>Gold</span>
+    </a>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>

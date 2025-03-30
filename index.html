@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - PWA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <!-- Logo on the left -->
+      <div class="logo-container">
+        <img src="assets/logo.png" alt="Logo" class="logo" />
+      </div>
+      <!-- Amount to be Invested on the right -->
+      <div class="invested-amount">
+        <p>Amount to be Invested: <span>₹190</span></p>
+        <p>Welcome back Rohan</p>
+      </div>
+    </div>
+  </header>
+ 
+  <main class="container">
+    <!-- Trending SIPs Section -->
+    <section class="trending-sips">
+      <h2>Trending SIPs</h2>
+      <div class="sip-container">
+        <!-- Duplicate these cards as needed -->
+        <div class="sip-card">
+          <img src="assets/tata.png" alt="Tata Multi Cap" />
+          <p>Tata Multi Cap</p>
+        </div>
+        <div class="sip-card">
+          <img src="assets/tata.png" alt="Tata Mid Cap" />
+          <p>Tata Mid Cap</p>
+        </div>
+        <div class="sip-card">
+          <img src="assets/tata.png" alt="Tata Large Cap" />
+          <p>Tata Large Cap</p>
+        </div>
+        <div class="sip-card">
+          <img src="assets/tata.png" alt="Tata Mid Cap" />
+          <p>Tata Small Cap</p>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Expenditure Preference Section -->
+    <section class="expenditure-preference">
+      <h2>Expenditure Preference</h2>
+      <form id="expenditure-form">
+        <label for="preference">Enter your expenditure preference (%) :</label>
+        <input type="number" id="preference" name="preference" min="0" max="100" placeholder="e.g., 30" required />
+        <button type="submit">Save</button>
+      </form>
+    </section>
+ 
+    <!-- Goals Section -->
+    <section class="goals">
+      <h2>Your Goals</h2>
+      <ul id="goal-list">
+        <!-- Existing goals will be appended here dynamically -->
+      </ul>
+      <form id="goal-form">
+        <input type="text" id="goal-name" placeholder="Goal Name" required />
+        <input type="number" id="goal-amount" placeholder="Amount" required />
+        <button type="submit">Add New Goal</button>
+      </form>
+    </section>
+  </main>
+ 
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="thumb.html" class="nav-item">
+      <img src="assets/thumb-icon.png" alt="Thumb Rules" />
+      <span>Thumb Rules</span>
+    </a>
+    <a href="index.html" class="nav-item">
+      <img src="assets/portfolio-icon.png" alt="Portfolio" />
+      <span>Portfolio</span>
+    </a>
+    <a href="gold.html" class="nav-item">
+      <img src="assets/gold-icon.png" alt="Gold" />
+      <span>Gold</span>
+    </a>
+  </nav>
+ 
+  <script src="script.js"></script>
+</body>
+</html>
