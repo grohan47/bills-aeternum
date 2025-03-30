@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Sum to 100</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <label for="slider">Value A:</label>
+    <input type="range" id="slider" min="0" max="100" value="30" oninput="updateRatios()">
+    <p>Value A: <span id="valueA">30</span></p>
+    <p>Value B: <span id="valueB">70</span></p>
+
+    <script>
+        function updateRatios() {
+            // Update variables
+            let valueA = document.getElementById("slider").value;
+            let valueB = 100 - valueA;
+
+            // Update HTML Text
+            document.getElementById("valueA").innerText = valueA;
+            document.getElementById("valueB").innerText = valueB;
+            
+            // Ajax POST
+            $.ajax({
+                url: "http://127.0.0.1:8000/update-values",
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify({ valueA: valueA, valueB: valueB }),
+                success: function(response) {
+                    console.log("Values passed successfully: ", response);
+                },
+                error: function(error) {
+                    console.error("Error posting values: ", error);
+                }
+            });
+        }
+    </script>
+</body>
+</html>
