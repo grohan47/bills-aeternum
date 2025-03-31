@@ -94,5 +94,42 @@
       </a>
     </nav>
     <script src="script.js"></script>
+    <script> 
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("expenditure-form");
+  
+      form.addEventListener("submit", async function (event) {
+          event.preventDefault();
+  
+          const preferenceInput = document.getElementById("preference");
+          const preferenceValue = preferenceInput.value;
+  
+          if (preferenceValue < 0 || preferenceValue > 100) {
+              alert("Please enter a valid percentage between 0 and 100.");
+              return;
+          }
+  
+          const email = "transactions@bank.com";
+  
+          try {
+              const response = await axios.post(`http://localhost:8000/user/${email}/preferences`, {
+                  gold: 0,
+                  mutual_fund: 0,
+                  expenditure: preferenceValue,
+              });
+  
+              if (response.status === 200) {
+                  alert("Expenditure preference saved successfully!");
+              } else {
+                  alert("Failed to save preference. Please try again.");
+              }
+          } catch (error) {
+              console.error("Error saving preference:", error);
+              alert("An error occurred. Please try again later.");
+          }
+      });
+  });
+    </script>
+    </script>
   </body>
 </html>

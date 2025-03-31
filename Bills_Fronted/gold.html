@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gold Calculator - PWA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Gold Calculator</h1>
+    </header>
+    <main class="container">
+      <!-- Display saved Gold Preference -->
+      <section class="saved-preference">
+        <p id="gold-preference-display"></p>
+      </section>
+      <!-- Gold Page Image -->
+      <section class="gold-image">
+        <img src="assets/gold.png" alt="Gold Image" />
+      </section>
+      <!-- Gold Calculator Section -->
+      <section class="gold-calculator">
+        <h2>Calculate Gold Units</h2>
+        <form id="gold-form">
+          <label for="gold-amount">Enter Amount:</label>
+          <input type="number" id="gold-amount" placeholder="Enter amount" required />
+          <button type="submit">Calculate</button>
+        </form>
+        <div id="gold-result"></div>
+      </section>
+    </main>
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="thumb.html" class="nav-item">
+        <img src="assets/thumbicon.png" alt="Thumb Rules" />
+      </a>
+      <a href="index.html" class="nav-item">
+        <img src="assets/porticon.png" alt="Portfolio" />
+      </a>
+      <a href="gold.html" class="nav-item">
+        <img src="assets/goldicon.png" alt="Gold" />
+      </a>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>

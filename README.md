@@ -26,7 +26,7 @@ Many young individuals hesitate to start investing due to **lack of financial li
 ## 🏗️ Tech Stack
 - **Frontend**: HTML/CSS
 - **Backend**: FastAPI
-- **APIs**: <\TBA>
+- **APIs**: FastAPI
 - **Bank Integration**: UPI/e-NACH for transaction detection
 
 ## 🔢 Investment Allocation (Thumb Rule)
